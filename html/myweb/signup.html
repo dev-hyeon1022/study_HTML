@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 : 회원가입</title>
+</head>
+<link rel="stylesheet" href="/myweb/signup-css.css">
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <h6 class="logo-naver">
+                <a href="http://naver.com">네이버</a></h6>
+            <div class="content">
+                <form action="" class="form">
+                    <div class="form-content">
+                        <div class="form-section">
+
+                            <div class="form-list">
+                                <div class="form-item id">
+                                    <input type="text" id="id" name="id" placeholder="아이디" class="input" maxlength="30">
+                                </div>
+                                <div class="form-item password">
+                                    <input type="password" id="pswd" name="paswd" placeholder="비밀번호" class="input" maxlength="30">
+                                </div>
+                                <div class="form-item email">
+                                    <span class="placeholder-prefix">[선택]</span>
+                                    <input type="email" id="email" name="email" placeholder="[선택] 비밀번호 분실 시 확인용 이메일" class="input">
+                                </div>
+                            </div>
+
+                            <div class="form-list">
+                                <div class="form-item id">
+                                    <input type="text" id="name" name="name" placeholder="이름" class="input" maxlength="20">
+                                </div>
+                                <div class="form-item calendar">
+                                    <input type="text" id="birthday-id" name="birthdayname" placeholder="생년월일 8자리" class="input" maxlength="8">
+                                </div>
+                                <div class="form-item telecom focus">
+                                    <button type="button" id="btn-telecom-id" class="btn-telecom" aria-expanded="false" aria-controls="telecom-menu">
+                                        <span class="placeholder">통신사 선택</span>
+                                    </button>
+                                    <ul role="menu" id="telecom-menu" class="telecom-menu">
+                                        <li role="presentation" class="item">
+                                            <button type="button" role="menuitem" class="button">
+                                                <span class="text">SKT</span>
+                                            </button>
+                                        </li>
+                                        <li role="presentation" class="item"><button type="button" role="menuitem" class="button"><span class="text">SKT 알뜰폰</span></button></li>
+                                        <li role="presentation" class="item"><button type="button" role="menuitem" class="button"><span class="text">KT</span></button></li>
+                                        <li role="presentation" class="item"><button type="button" role="menuitem" class="button"><span class="text">KT 알뜰폰</span></button></li>
+                                        <li role="presentation" class="item"><button type="button" role="menuitem" class="button"><span class="text">LG U+</span></button></li>
+                                        <li role="presentation" class="item"><button type="button" role="menuitem" class="button"><span class="text">LG U+ 알뜰폰</span></button></li>
+                                    </ul>
+                                </div>
+                                <div class="form-item adult">
+                                    <ul class="adult-list">
+                                        <li class="radio-item">
+                                            <input type="radio" value="M"  class="blind">
+                                            <label for="identityGender1">남자</label>
+                                        </li>
+                                        <li class="radio-item">
+                                            <input type="radio" value="F"  class="blind">
+                                            <label for="identityGender2">여자</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="adult-list">
+                                        <li class="radio-item">
+                                            <input type="radio" value="K" checked class="blind">
+                                            <label for="foreigner1">내국인</label>
+                                        </li>
+                                        <li class="radio-item">
+                                            <input type="radio" value="F" class="blind">
+                                            <label for="foreigner2">외국인</label>
+                                        </li>
+                                    </ul>
+                                </div>                                                          
+                                <div class="form-item phone">
+                                    <input type="tel" placeholder="휴대전화번호" class="input" value maxlength="16">
+                                </div>
+                            </div>
+
+                            <div class="form-list">
+                                <div class="form-item check-box">
+                                    <div class="title-area">
+                                        <div class="check-circle">
+                                            <input type="checkbox" class="blind">
+                                            <label for="agree-all">
+                                                <em class="option point">[필수]</em>
+                                                <span class="text">인증 약관 전체동의</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-submit-wrap">
+                        <button type="button" class="btn-submit">인증요청</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
